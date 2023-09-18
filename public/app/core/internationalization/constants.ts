@@ -5,6 +5,8 @@ export const FRENCH_FRANCE = 'fr-FR';
 export const SPANISH_SPAIN = 'es-ES';
 export const GERMAN_GERMANY = 'de-DE';
 export const CHINESE_SIMPLIFIED = 'zh-Hans';
+export const FINNISH_FINNISH = 'fi-FI';
+export const ARABIC_SAUDI_ARABIA = 'ar-SA';
 export const PSEUDO_LOCALE = 'pseudo-LOCALE';
 
 export const DEFAULT_LANGUAGE = ENGLISH_US;
@@ -24,39 +26,51 @@ export const LANGUAGES: LanguageDefinitions[] = [
   {
     code: ENGLISH_US,
     name: 'English',
-    loader: () => import('../../../locales/en-US/grafana.json'),
+    loader: () => import('../../../locales/en-US/grafana.json')
   },
 
   {
     code: FRENCH_FRANCE,
     name: 'Français',
-    loader: () => import('../../../locales/fr-FR/grafana.json'),
+    loader: () => import('../../../locales/fr-FR/grafana.json')
   },
 
   {
     code: SPANISH_SPAIN,
     name: 'Español',
-    loader: () => import('../../../locales/es-ES/grafana.json'),
+    loader: () => import('../../../locales/es-ES/grafana.json')
   },
 
   {
     code: GERMAN_GERMANY,
     name: 'Deutsch',
-    loader: () => import('../../../locales/de-DE/grafana.json'),
+    loader: () => import('../../../locales/de-DE/grafana.json')
   },
 
   {
     code: CHINESE_SIMPLIFIED,
     name: '中文（简体）',
-    loader: () => import('../../../locales/zh-Hans/grafana.json'),
+    loader: () => import('../../../locales/zh-Hans/grafana.json')
   },
+
+  {
+    code: FINNISH_FINNISH,
+    name: 'Suomi',
+    loader: () => import('../../../locales/fi-FI/grafana.json')
+  },
+
+  {
+    code: ARABIC_SAUDI_ARABIA,
+    name: 'Suomi',
+    loader: () => import('../../../locales/ar-SA/grafana.json')
+  }
 ];
 
 if (process.env.NODE_ENV === 'development') {
   LANGUAGES.push({
     code: PSEUDO_LOCALE,
     name: 'Pseudo-locale',
-    loader: () => import('../../../locales/pseudo-LOCALE/grafana.json'),
+    loader: () => import('../../../locales/pseudo-LOCALE/grafana.json')
   });
 }
 
