@@ -18,5 +18,8 @@ export const SWEDISH_SWEDEN = 'sv-SE';
 export const TURKISH_TURKEY = 'tr-TR';
 export const CHINESE_TRADITIONAL = 'zh-Hant';
 
+export const FINNISH_FINLAND = 'fi-FI';
+export const ARABIC_SAUDI_ARABIA = 'ar-SA';
+
 export const DEFAULT_LANGUAGE = ENGLISH_US;
 export const PSEUDO_LOCALE = 'pseudo';
