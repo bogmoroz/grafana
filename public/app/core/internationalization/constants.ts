@@ -61,7 +61,7 @@ export const LANGUAGES: LanguageDefinitions[] = [
 
   {
     code: ARABIC_SAUDI_ARABIA,
-    name: 'Suomi',
+    name: 'عربي',
     loader: () => import('../../../locales/ar-SA/grafana.json')
   }
 ];
