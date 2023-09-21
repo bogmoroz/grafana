@@ -31,4 +31,4 @@ jobs:
         run: docker tag grafana/grafana-oss:dev bogdanmoroz/custom-grafana-oss:latest
 
       - name: Push custom image
-        run: docker push bogdanmoroz/custom-obsas-grafana:latest
+        run: docker push bogdanmoroz/custom-grafana-oss:latest
