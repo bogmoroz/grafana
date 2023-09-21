@@ -27,5 +27,5 @@ jobs:
       - name: Build Docker image
         run: make build-docker-full
       
-     - name: Tag custom image
-       run: docker tag grafana/grafana-oss:dev public/custom-obsas-grafana:latest
+      - name: Tag custom image
+        run: docker tag grafana/grafana-oss:dev public/custom-obsas-grafana:latest
