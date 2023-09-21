@@ -22,10 +22,13 @@ jobs:
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
-          images: bogdanmoroz/public
+          images: bogdanmoroz/custom-grafana-oss
 
       - name: Build Docker image
         run: make build-docker-full
       
       - name: Tag custom image
-        run: docker tag grafana/grafana-oss:dev public/custom-obsas-grafana:latest
+        run: docker tag grafana/grafana-oss:dev bogdanmoroz/custom-grafana-oss:latest
+
+      - name: Push custom image
+        run: docker push bogdanmoroz/custom-obsas-grafana:latest
